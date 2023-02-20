@@ -13,7 +13,7 @@ client.on('messageCreate', async message => {
   const command = args.shift().toLowerCase();
 
   if (command === 'warn') {
-    if (!message.member.roles.cache.some(role => ['834480283881308241', '726845950785486858'].includes(role.id))) {
+    if (!message.member.roles.cache.some(role => ['yetkiliRol1', 'yetkiliRol2'].includes(role.id))) {
       return;
     }
     if (!args[0]) {
@@ -26,10 +26,10 @@ client.on('messageCreate', async message => {
         return message.reply('Geçerli bir kullanıcı belirtmelisin.');
       }
     }
-    const role1 = message.guild.roles.cache.get('1076919419055374427');
-    const role2 = message.guild.roles.cache.get('1077169502074196019');
+    const role1 = message.guild.roles.cache.get('uyari1');
+    const role2 = message.guild.roles.cache.get('uyari2');
     if (!role1) {
-      return message.reply('Geçersiz rol ID\'si: 1076919419055374427');
+      return message.reply('Geçersiz rol ID\'si: uyari1');
     }
     if (!member.roles.cache.has(role1.id) && !member.roles.cache.has(role2.id)) {
       await member.roles.add(role1);
@@ -43,4 +43,4 @@ client.on('messageCreate', async message => {
 });
 
 
-client.login('MTA3Njk1MDEyMzEwOTY4NzMyOA.GckV28.io7Qghk1olj5DyJNgdisjadGaTi23PafEgtXsY');
+client.login('Token');
