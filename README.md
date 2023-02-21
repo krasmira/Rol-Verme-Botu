@@ -1,3 +1,7 @@
+# KULLANIMI
+Kodu zip halinde indirdikten sonra istediğiniz klasöre çıkarın. Klasöre çıktıktan sonra **Düzenlemeler yapıp(Yapılmazsa çalışmaz)** Visual Studio Code'den terminali açıp node index.js yazıp botunuzu aktif edebilirsiniz. 
+Düzenlenecek yerlerin yanına // işareti koydum ona göre düzenleme yapabilirsiniz.
+ 
 # Soru-Cevap
 
 **SORU**
