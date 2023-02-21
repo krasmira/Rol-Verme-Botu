@@ -12,7 +12,7 @@ client.on('messageCreate', async message => {
   const args = message.content.slice(1).trim().split(/ +/);
   const command = args.shift().toLowerCase();
 
-  if (command === 'warn') {
+  if (command === 'rolver') { //Prefixten sonraki komutumuz burayı istediğiniz gibi değiştirebilirsiniz.
     if (!message.member.roles.cache.some(role => ['yetkiliRol1', 'yetkiliRol2'].includes(role.id))) { //Bu komutu kullanmasını istediğiniz rollerin idsini yazınız.
       return;
     }
