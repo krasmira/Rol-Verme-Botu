@@ -1,15 +1,20 @@
-# Uyaribotu
+# KULLANIMI
+Kodu zip halinde indirdikten sonra istediğiniz klasöre çıkarın. Klasöre çıktıktan sonra **Düzenlemeler yapıp(Yapılmazsa çalışmaz)** Visual Studio Code'den terminali açıp node index.js yazıp botunuzu aktif edebilirsiniz. 
+Düzenlenecek yerlerin yanına // işareti koydum ona göre düzenleme yapabilirsiniz.
+ 
+# Soru-Cevap
+
 **SORU**
 
 Bu komutlar ne yapar?
 
-**Cevap** 
+**CEVAP** 
 
 rol verme botudur. Rollerin vermesini sağlar.
 
 
-**Net amacı**
+# **Net amacı**
 
--Bu kodda, öncelikle role2 için varlık kontrolü yapılmıştır. 
-Ardından, kullanıcının role1 rolüne sahip olup olmadığı kontrol edilmiş ve eğer kullanıcıda role1 yoksa bu rol kullanıcıya verilmiştir.
-Kullanıcının role1 rolüne sahip olduğu durumda ise önce bu rol kullanıcıdan kaldırılmış ve sonra role2 rolü kullanıcıya verilmiştir.
+Yetkililerin kullanacağı bu botta etiketlediği veya idsini yazdığı kullancıya **rol1** rolü yoksa sadece **rol1** rolü verecektir. Ama **rol1** varsa **rol1** rolünü alıp yerine **rol2** verecektir.
+
+
