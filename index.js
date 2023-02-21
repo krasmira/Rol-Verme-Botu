@@ -13,7 +13,7 @@ client.on('messageCreate', async message => {
   const command = args.shift().toLowerCase();
 
   if (command === 'warn') {
-    if (!message.member.roles.cache.some(role => ['yetkiliRol1', 'yetkiliRol2'].includes(role.id))) {
+    if (!message.member.roles.cache.some(role => ['yetkiliRol1', 'yetkiliRol2'].includes(role.id))) { //Bu komutu kullanmasını istediğiniz rollerin idsini yazınız.
       return;
     }
     if (!args[0]) {
@@ -26,8 +26,8 @@ client.on('messageCreate', async message => {
         return message.reply('Geçerli bir kullanıcı belirtmelisin.');
       }
     }
-    const role1 = message.guild.roles.cache.get('uyari1');
-    const role2 = message.guild.roles.cache.get('uyari2');
+    const role1 = message.guild.roles.cache.get('Rol 1'); //Rol 1 rolünün id sini yazalım.
+    const role2 = message.guild.roles.cache.get('Rol 2'); //Rol 1 rolünün id sini yazalım.
     if (!role1) {
       return message.reply('Geçersiz rol ID\'si: uyari1');
     }
@@ -43,4 +43,4 @@ client.on('messageCreate', async message => {
 });
 
 
-client.login('Token');
+client.login('Token'); //Botumuzun tokenini yazalım.
